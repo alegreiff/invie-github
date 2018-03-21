@@ -10,11 +10,23 @@
     max-width: 100%;
     border: solid red 10px;
     box-sizing: border-box;
+    
+    }
+    img#responsive{
+        display: none;
+    }
+    @media screen and (max-width: 768px){
+        img{
+            display: none;
+        }
+        img#responsive{
+            display: block;
+        }
     }
     </style>
 </head>
 <body>
-    <img src="header.jpg" alt="">
+    <img src="responsive.png" alt="" id="responsive">
     <img src="hero.jpg" alt="">
     <img src="clasica.jpg" alt="">
     <img src="acustica.jpg" alt="">
